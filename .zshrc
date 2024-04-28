@@ -9,11 +9,11 @@ zstyle :compinstall filename '/home/jaagup/.zshrc'
 autoload -Uz compinit
 compinit
 
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '%b '
-setopt PROMPT_SUBST
-PROMPT='%F{red}%~%f %F{red}${vcs_info_msg_0_}%f'
+#autoload -Uz vcs_info
+#precmd() { vcs_info }
+#zstyle ':vcs_info:git:*' formats '%b '
+#setopt PROMPT_SUBST
+PROMPT='%F{red}%~%f '
 
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
@@ -47,6 +47,10 @@ function stash() {
   git commit -m "$msg"
   git push
   echo "Committed and pushed all directory changes with message: '$msg'"
+}
+
+function tssh() {
+  ssh $* -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
 }
 
 export PATH="$PATH:/home/jaagup/.local/bin"
