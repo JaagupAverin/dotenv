@@ -56,5 +56,8 @@ function tssh() {
 export PATH="$PATH:/home/jaagup/.local/bin"
 source "$HOME/.rye/env"
 
-if [ "$TMUX" = "" ]; then tmux attach -tdefault || tmux new -sdefault; fi
+if [ -z "$TMUX" ]
+then
+    tmux attach || tmux new -s tmux
+fi
 
