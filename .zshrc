@@ -53,6 +53,7 @@ function tssh() {
   ssh $* -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
 }
 
+export EDITOR=nano
 export PATH="$PATH:/home/jaagup/.local/bin"
 source "$HOME/.rye/env"
 
