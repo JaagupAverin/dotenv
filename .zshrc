@@ -55,10 +55,12 @@ function tssh() {
 
 export EDITOR=nano
 export PATH="$PATH:/home/jaagup/.local/bin"
+export PATH="$PATH:/home/jaagup/odin-linux-amd64-dev-2024-10"
 source "$HOME/.rye/env"
 
-if [ -z "$TMUX" ]
-then
+terminal="$(ps -p $(ps -p $$ -o ppid=) -o comm=)"
+
+if [ "$terminal" = "konsole" ]; then
     tmux attach || tmux new -s tmux
 fi
 
