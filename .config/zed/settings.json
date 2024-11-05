@@ -39,6 +39,10 @@
     "dock": "right",
     "folder_icons": false
   },
+  "indent_guides": {
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+  },
   "lsp": {
     "pyright": {
       "settings": {
