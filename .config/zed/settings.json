@@ -1,0 +1,80 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2",
+    "dock": "left",
+    "default_width": 540
+  },
+  "ui_font_size": 16,
+  "ui_font_family": "SeriousShanns Nerd Font Mono",
+  "ui_font_weight": 200,
+  "buffer_font_size": 16,
+  "buffer_font_family": "SeriousShanns Nerd Font Mono",
+  "buffer_font_weight": 200,
+  "theme": {
+    "mode": "dark",
+    "light": "Solarized Light",
+    "dark": "Callisto Dark"
+  },
+  "cursor_shape": "block",
+  "cursor_blink": false,
+  "current_line_highlight": "gutter",
+  "auto_install_extensions": {
+    "ruff": true
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "toolbar": {
+    "quick_actions": false
+  },
+  "file_scan_exclusions": ["**/.git", "**/__pycache__", "**/.**_cache"],
+  "preferred_line_length": 120,
+  "show_whitespaces": "all",
+  "wrap_guides": [120],
+  "project_panel": {
+    "dock": "right",
+    "folder_icons": false
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "strict",
+          "inlayHints": {
+            "variableTypes": true,
+            "functionReturnTypes": true,
+            "pytestParameters": true
+          }
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    }
+  },
+  "format_on_save": "off",
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        },
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "bindings": {
+      // Disable some unused keybindings:
+      "ctrl-u": null,
+      "ctrl-b": null,
+      "ctrl-/": null,
+      // Disable some keybindings that are used for multi-stroke keybinds:
+      "ctrl-i": null,
+      "ctrl-k": null,
+      "ctrl-d": null,
+      "ctrl-m": null,
+      "ctrl-e": null,
+
+      // Remap ALT keys for basic navigation/selection:
+      "alt-n": ["workspace::SendKeystrokes", "down"],
+      "alt-p": ["workspace::SendKeystrokes", "up"],
+      "alt-f": ["workspace::SendKeystrokes", "right"],
+      "alt-b": ["workspace::SendKeystrokes", "left"],
+      "alt-a": ["workspace::SendKeystrokes", "home"],
+      "alt-e": ["workspace::SendKeystrokes", "end"],
+      "alt-shift-n": ["workspace::SendKeystrokes", "shift-down"],
+      "alt-shift-p": ["workspace::SendKeystrokes", "shift-up"],
+      "alt-shift-f": ["workspace::SendKeystrokes", "shift-right"],
+      "alt-shift-b": ["workspace::SendKeystrokes", "shift-left"],
+      "alt-shift-a": ["workspace::SendKeystrokes", "shift-home"],
+      "alt-shift-e": ["workspace::SendKeystrokes", "shift-end"],
+      // Remap ALt+ctrl keys for word navigation/selection:
+      "alt-ctrl-f": ["workspace::SendKeystrokes", "ctrl-right"],
+      "alt-ctrl-b": ["workspace::SendKeystrokes", "ctrl-left"],
+      "alt-ctrl-shift-f": ["workspace::SendKeystrokes", "ctrl-shift-right"],
+      "alt-ctrl-shift-b": ["workspace::SendKeystrokes", "ctrl-shift-left"],
+      // Remap ALT+a/e for page start/end navigation/selection:
+      "alt-ctrl-a": ["workspace::SendKeystrokes", "pageup"],
+      "alt-ctrl-e": ["workspace::SendKeystrokes", "pagedown"],
+      "alt-ctrl-shift-a": ["workspace::SendKeystrokes", "shift-pageup"],
+      "alt-ctrl-shift-e": ["workspace::SendKeystrokes", "shift-pagedown"],
+      // Misc ALT navigation:
+      "alt-d": ["workspace::SendKeystrokes", "delete"],
+      "ctrl-shift-alt-p": "editor::AddSelectionAbove",
+      "ctrl-shift-alt-n": "editor::AddSelectionBelow",
+      "ctrl-alt-p": "editor::MoveLineUp",
+      "ctrl-alt-n": "editor::MoveLineDown",
+
+      // Dock shortcuts:
+      "ctrl-.": "workspace::ToggleRightDock",
+      "ctrl-,": "workspace::ToggleLeftDock",
+      "ctrl-alt-,": "workspace::ToggleBottomDock",
+      "ctrl-alt-.": "workspace::ToggleBottomDock",
+      "ctrl-<": "workspace::ToggleBottomDock",
+      "ctrl->": "workspace::ToggleBottomDock",
+      "ctrl-alt-<": "workspace::ToggleBottomDock",
+      "ctrl-alt->": "workspace::ToggleBottomDock",
+
+      // Pane shortcuts:
+      "ctrl-i ctrl-h": "pane::SplitDown",
+      "ctrl-i ctrl-v": "pane::SplitRight",
+      "ctrl-i ctrl-p": "workspace::ActivatePreviousPane",
+      "ctrl-i ctrl-n": "workspace::ActivateNextPane",
+      "ctrl-i ctrl-b": ["workspace::SwapPaneInDirection", "Left"],
+      "ctrl-i ctrl-f": ["workspace::SwapPaneInDirection", "Right"],
+      "ctrl-i ctrl-g": "editor::GoToDefinitionSplit",
+      "ctrl-shift-w": "pane::CloseAllItems",
+
+      // Menus:
+      "ctrl-d ctrl-i": "project_panel::ToggleFocus",
+      "ctrl-d ctrl-x": "zed::Extensions",
+      "ctrl-d ctrl-j": "zed::OpenSettings",
+      "ctrl-d ctrl-k": "zed::OpenKeymap",
+      "ctrl-d ctrl-o": "outline_panel::ToggleFocus",
+      "ctrl-d ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-d ctrl-c": "assistant::ToggleFocus",
+      "ctrl-d ctrl-v": "editor::ToggleGitBlame",
+      "ctrl-d ctrl-e": "diagnostics::Deploy",
+      "ctrl-d ctrl-p": "collab_panel::ToggleFocus",
+      "ctrl-d ctrl-n": "notification_panel::ToggleFocus",
+      "ctrl-o ctrl-o": "workspace::Open",
+      "ctrl-o ctrl-r": "projects::OpenRecent",
+      "ctrl-shift-o": "workspace::Open",
+      "ctrl-o ctrl-s": "projects::OpenRemote",
+
+      // Misc navigation:
+      "ctrl-y": "editor::LineUp",
+      "ctrl-j": "editor::LineDown",
+      "ctrl-l": "editor::ScrollCursorCenter",
+      "ctrl-;": "pane::GoBack",
+      "ctrl-:": "pane::GoForward",
+      "ctrl-'": "editor::MoveToEnclosingBracket",
+      "ctrl-k ctrl-g": "editor::GoToDefinition",
+      "ctrl-k ctrl-f": "editor::FindAllReferences",
+      "ctrl-q": "outline::Toggle",
+      "ctrl-t": "workspace::OpenInTerminal",
+      "ctrl-r": "editor::RevealInFileManager",
+      "ctrl-1": ["pane::ActivateItem", 0],
+      "ctrl-2": ["pane::ActivateItem", 1],
+      "ctrl-3": ["pane::ActivateItem", 2],
+      "ctrl-4": ["pane::ActivateItem", 3],
+      "ctrl-5": ["pane::ActivateItem", 4],
+      "ctrl-6": ["pane::ActivateItem", 5],
+      "ctrl-7": ["pane::ActivateItem", 6],
+      "ctrl-8": ["pane::ActivateItem", 7],
+      "ctrl-9": ["pane::ActivateItem", 8],
+      "shift-space": "project_panel::RevealInFileManager",
+      "ctrl-space": "project_panel::RevealInFileManager",
+      "ctrl-shift-space": "project_panel::RevealInFileManager",
+
+      // Folding:
+      "ctrl-m ctrl-a": "editor::FoldAll",
+      "ctrl-m ctrl-x": "editor::UnfoldAll",
+      "ctrl-m ctrl-f": "editor::ToggleFold",
+
+      // Misc editing:
+      "ctrl-k ctrl-c": "editor::ToggleComments",
+      "ctrl-k ctrl-r": "editor::Rename",
+      "ctrl-shift-s": "workspace::SaveAll",
+      "ctrl-s": "workspace::Save",
+      "ctrl-alt-l": "editor::Format",
+
+      // Task Execution:
+      "ctrl-e ctrl-a": "zed::OpenTasks",
+      "ctrl-e ctrl-e": "task::Spawn",
+      "ctrl-e ctrl-r": "task::Rerun"
+    }
+  }
+]
