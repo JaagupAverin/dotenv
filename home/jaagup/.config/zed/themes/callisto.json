@@ -17,16 +17,16 @@
         "elevated_surface.background": "#164857",
         "surface.background": "#142a35",
         "element.background": "#142a35",
-        "element.hover": "#164857",
-        "element.active": "#164857",
-        "element.selected": "#164857",
+        "element.hover": "#16485766",
+        "element.active": "#164857aa",
+        "element.selected": "#164857ff",
         "element.disabled": null,
         "ghost_element.background": "#164857",
         "editor.active_line_number": null,
         "editor.active_wrap_guide": null,
-        "ghost_element.hover": "#142a35",
-        "ghost_element.active": "#142a35",
-        "ghost_element.selected": "#142a35",
+        "ghost_element.hover": "#142a3566",
+        "ghost_element.active": "#142a35aa",
+        "ghost_element.selected": "#142a35ff",
         "ghost_element.disabled": null,
         "editor.subheader.background": "#164857",
         "drop_target.background": "#142a35",
@@ -45,7 +45,7 @@
         "tab_bar.border": "#164857",
         "tab.inactive_background": "#142a35",
         "tab.active_background": "#164857",
-        "search.match_background": "#164857",
+        "search.match_background": "#34cb6244",
         "panel.background": "#142a35",
         "panel.focused_border": "#164857",
         "pane.focused_border": "#164857",
@@ -142,7 +142,7 @@
           {
             "cursor": "#34cb62",
             "background": "#000000",
-            "selection": "#164857"
+            "selection": "#34cb6266"
           }
         ],
         "syntax": {
@@ -167,6 +167,11 @@
             "font_weight": null
           },
           "constant": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "constant.builtin": {
             "color": "#f43557",
             "font_style": null,
             "font_weight": null
@@ -192,7 +197,7 @@
             "font_weight": 600
           },
           "enum": {
-            "color": "#f43557",
+            "color": "#dfdfdf",
             "font_style": null,
             "font_weight": null
           },
@@ -263,6 +268,11 @@
           },
           "string": {
             "color": "#f43557",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.doc": {
+            "color": "#34cb62",
             "font_style": null,
             "font_weight": null
           },

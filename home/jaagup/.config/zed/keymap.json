@@ -2,7 +2,6 @@
   {
     "bindings": {
       // Disable some unused keybindings:
-      "ctrl-u": null,
       "ctrl-b": null,
       "ctrl-/": null,
       // Disable some keybindings that are used for multi-stroke keybinds:
@@ -11,6 +10,7 @@
       "ctrl-d": null,
       "ctrl-m": null,
       "ctrl-e": null,
+      "ctrl-o": null,
 
       // Remap ALT keys for basic navigation/selection:
       "alt-n": ["workspace::SendKeystrokes", "down"],
@@ -112,9 +112,15 @@
       // Misc editing:
       "ctrl-k ctrl-c": "editor::ToggleComments",
       "ctrl-k ctrl-r": "editor::Rename",
+      "ctrl-k ctrl-p": "editor::ToggleCodeActions",
+      "ctrl-k ctrl-w": "editor::ToggleInlayHints",
       "ctrl-shift-s": "workspace::SaveAll",
       "ctrl-s": "workspace::Save",
       "ctrl-alt-l": "editor::Format",
+      "shift shift": "assistant::InlineAssist",
+      "ctrl-enter": "editor::NewlineAbove",
+      "ctrl-u": "editor::SelectLargerSyntaxNode",
+      "ctrl-shift-u": "editor::SelectSmallerSyntaxNode",
 
       // Task Execution:
       "ctrl-e ctrl-a": "zed::OpenTasks",
