@@ -50,7 +50,7 @@
           "pythonPath": ".venv/bin/python"
         },
         "analysis": {
-          "diagnosticMode": "workspace"
+          "diagnosticMode": "workspace",
         }
       },
       "rust-analyzer": {
