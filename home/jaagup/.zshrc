@@ -63,4 +63,3 @@ terminal="$(ps -p $(ps -p $$ -o ppid=) -o comm=)"
 if [ "$terminal" = "konsole" ]; then
     tmux attach || tmux new -s tmux
 fi
-

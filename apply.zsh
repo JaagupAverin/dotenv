@@ -1,16 +1,16 @@
 #!/bin/zsh
 
 # Copy zsh conf:
-cp --parents ~/.zshrc .
+cp --parents home/jaagup/.zshrc /
 
 # Copy tmux conf:
-cp --parents ~/.tmux.conf .
+cp --parents home/jaagup/.tmux.conf /
 
 # Copy konsole conf:
-cp --parents -r ~/.local/share/konsole .
+cp --parents -r home/jaagup/.local/share/konsole /
 
 # Copy zed conf:
-cp --parents -r ~/.config/zed .
+cp --parents -r home/jaagup/.config/zed /
 
 # Copy fonts:
-cp --parents -r ~/.local/share/fonts/* .
+cp --parents -r home/jaagup/.local/share/fonts /
