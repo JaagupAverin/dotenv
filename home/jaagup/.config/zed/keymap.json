@@ -105,6 +105,8 @@
       "shift-space": "project_panel::RevealInFileManager",
       "ctrl-space": "project_panel::RevealInFileManager",
       "ctrl-shift-space": "project_panel::RevealInFileManager",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-shift-p": "command_palette::Toggle",
 
       // Folding:
       "ctrl-m ctrl-a": "editor::FoldAll",
@@ -123,6 +125,9 @@
       "ctrl-enter": "editor::NewlineAbove",
       "ctrl-u": "editor::SelectLargerSyntaxNode",
       "ctrl-shift-u": "editor::SelectSmallerSyntaxNode",
+
+      // Find/Replace:
+      "ctrl-alt-enter": "search::ReplaceAll",
 
       // Task Execution:
       "ctrl-e ctrl-a": "zed::OpenTasks",

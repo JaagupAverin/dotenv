@@ -11,3 +11,6 @@ cp --parents -r ~/.local/share/konsole .
 
 # Copy zed conf:
 cp --parents -r ~/.config/zed .
+
+# Copy fonts:
+cp --parents -r ~/.local/share/fonts/* .
