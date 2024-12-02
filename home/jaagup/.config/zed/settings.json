@@ -1,4 +1,18 @@
 {
+  "ssh_connections": [
+    {
+      "host": "localhost",
+      "username": "dev",
+      "port": 3022,
+      "projects": [
+        {
+          "paths": [
+            "~/ws2"
+          ]
+        }
+      ]
+    }
+  ],
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
