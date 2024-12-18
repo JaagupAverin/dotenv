@@ -6,9 +6,7 @@
       "port": 3022,
       "projects": [
         {
-          "paths": [
-            "~/ws2"
-          ]
+          "paths": ["~/ws2"]
         }
       ]
     }
@@ -114,5 +112,9 @@
     "show_background": false,
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50
+  },
+  "use_system_path_prompts": false,
+  "file_finder": {
+    "modal_max_width": "large"
   }
 }
