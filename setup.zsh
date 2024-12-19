@@ -3,11 +3,11 @@
 sudo apt-get update
 
 # Install basic tools
-sudo apt-get install -y curl wireguard tmux fzf picocom ncdu net-tools ffmpeg xxd build-essential linux-headers-`uname -r` dkms swig flex bison tlp powerstat
+sudo apt-get install -y curl wireguard tmux fzf picocom ncdu net-tools ffmpeg xxd build-essential linux-headers-`uname -r` dkms swig flex bison tlp powerstat cmake
 sudo apt-get install -y default-jre
 
 # Install apps
-sudo apt-get install -y telegram-desktop
+sudo snap install telegram-desktop
 
 # Install rye
 if type rye &> /dev/null; then
@@ -27,4 +27,9 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
 fi
 
 # Configure KDE manually
-# Install apps manually: CLion, Slack, VirtualBox, Zed, etc
+# Install apps manually:
+#   * Zed
+#   * Sublime Merge
+#   * VirtualBox
+#   * CLion
+#   * Slack

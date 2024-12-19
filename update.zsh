@@ -14,3 +14,6 @@ cp --parents -r ~/.config/zed .
 
 # Copy fonts:
 cp --parents -r ~/.local/share/fonts .
+
+# Copy git stuff:
+cp --parents -r ~/.gitconfig

@@ -14,3 +14,6 @@ cp --parents -r home/jaagup/.config/zed /
 
 # Copy fonts:
 cp --parents -r home/jaagup/.local/share/fonts /
+
+# Apply git stuff:
+cp --parents -r home/jaagup/.gitconfig /
