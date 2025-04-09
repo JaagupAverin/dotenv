@@ -1,4 +1,8 @@
 {
+  "vim_mode": false,
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "ssh_connections": [
     {
       "host": "localhost",
@@ -6,8 +10,10 @@
       "port": 3022,
       "projects": [
         {
-          "paths": ["~/ws2"]
-        }
+          "paths": [
+            "~/ws/detector"
+          ]
+        },
       ]
     }
   ],
@@ -23,7 +29,7 @@
   "ui_font_size": 16,
   "ui_font_family": "SeriousShanns Nerd Font Mono",
   "ui_font_weight": 200,
-  "buffer_font_size": 16,
+  "buffer_font_size": 15.0,
   "buffer_font_family": "SeriousShanns Nerd Font Mono",
   "buffer_font_weight": 200,
   "theme": {
@@ -116,5 +122,11 @@
   "use_system_path_prompts": false,
   "file_finder": {
     "modal_max_width": "large"
+  },
+  "file_types": {
+    "C": ["nc"]
+  },
+  "edit_predictions": {
+    "mode": "subtle"
   }
 }

@@ -252,7 +252,62 @@
             "font_weight": null
           },
           "preproc": {
-            "color": "#d1bd98",
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.string": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.number": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.number.float": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.boolean": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.comment": {
+            "color": "#34cb62",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.punctuation.delimiter": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.punctuation.bracket": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.variable": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.function": {
+            "color": "#dfdfdf",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.keyword": {
+            "color": "#be93d4",
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc.keyword.directive": {
+            "color": "#be93d4",
             "font_style": null,
             "font_weight": null
           },
@@ -302,7 +357,7 @@
             "font_weight": null
           },
           "tag": {
-            "color": "#34cb62",
+            "color": "#d1bd98",
             "font_style": null,
             "font_weight": null
           },
@@ -348,11 +403,6 @@
           },
           "variant": {
             "color": "#dfdfdf",
-            "font_style": null,
-            "font_weight": null
-          },
-          "python.string": {
-            "color": "#fffffff",
             "font_style": null,
             "font_weight": null
           }

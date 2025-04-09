@@ -1,5 +1,6 @@
 [
   {
+    // Global bindings:
     "bindings": {
       // Disable some unused keybindings:
       "ctrl-b": null,
@@ -11,6 +12,7 @@
       "ctrl-m": null,
       "ctrl-e": null,
       "ctrl-o": null,
+      "alt-l": null,
 
       // Remap ALT keys for basic navigation/selection:
       "alt-n": ["workspace::SendKeystrokes", "down"],
@@ -57,8 +59,8 @@
       "ctrl-i ctrl-v": "pane::SplitRight",
       "ctrl-i ctrl-p": "workspace::ActivatePreviousPane",
       "ctrl-i ctrl-n": "workspace::ActivateNextPane",
-      "ctrl-i ctrl-b": ["workspace::SwapPaneInDirection", "Left"],
-      "ctrl-i ctrl-f": ["workspace::SwapPaneInDirection", "Right"],
+      "ctrl-i ctrl-b": "workspace::SwapPaneLeft",
+      "ctrl-i ctrl-f": "workspace::SwapPaneRight",
       "ctrl-i ctrl-g": "editor::GoToDefinitionSplit",
       "ctrl-shift-w": "pane::CloseAllItems",
 
@@ -70,12 +72,14 @@
       "ctrl-d ctrl-o": "outline_panel::ToggleFocus",
       "ctrl-d ctrl-t": "terminal_panel::ToggleFocus",
       "ctrl-d ctrl-c": "assistant::ToggleFocus",
-      "ctrl-d ctrl-v": "editor::ToggleGitBlame",
+      "ctrl-d ctrl-v": "git::Blame",
       "ctrl-d ctrl-e": "diagnostics::Deploy",
       "ctrl-d ctrl-p": "collab_panel::ToggleFocus",
       "ctrl-d ctrl-n": "notification_panel::ToggleFocus",
+      "ctrl-d ctrl-f": "git_panel::ToggleFocus",
       "ctrl-o ctrl-o": "workspace::Open",
-      "ctrl-o ctrl-f": "editor::OpenFile",
+      "ctrl-o ctrl-f": "editor::OpenSelectedFilename",
+      "ctrl-o ctrl-l": "editor::OpenUrl",
       "ctrl-o ctrl-r": "projects::OpenRecent",
       "ctrl-shift-o": "workspace::Open",
       "ctrl-o ctrl-s": "projects::OpenRemote",
@@ -92,7 +96,8 @@
       "ctrl-q": "outline::Toggle",
       "ctrl-t": "workspace::OpenInTerminal",
       "ctrl-r ctrl-r": "editor::RevealInFileManager",
-      "ctrl-r ctrl-p": "editor::CopyPath",
+      "ctrl-r ctrl-p": "workspace::CopyPath",
+      "ctrl-r ctrl-l": "workspace::CopyRelativePath",
       "ctrl-1": ["pane::ActivateItem", 0],
       "ctrl-2": ["pane::ActivateItem", 1],
       "ctrl-3": ["pane::ActivateItem", 2],
@@ -125,6 +130,9 @@
       "ctrl-enter": "editor::NewlineAbove",
       "ctrl-u": "editor::SelectLargerSyntaxNode",
       "ctrl-shift-u": "editor::SelectSmallerSyntaxNode",
+      "ctrl-[": "editor::ToggleEditPrediction",
+      "ctrl-]": "editor::AcceptEditPrediction",
+      "ctrl-}": "editor::AcceptPartialEditPrediction",
 
       // Find/Replace:
       "ctrl-alt-enter": "search::ReplaceAll",
@@ -133,6 +141,12 @@
       "ctrl-e ctrl-a": "zed::OpenTasks",
       "ctrl-e ctrl-e": "task::Spawn",
       "ctrl-e ctrl-r": "task::Rerun"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "shift-enter": "assistant::Assist"
     }
   }
 ]
