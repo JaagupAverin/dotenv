@@ -1,0 +1,38 @@
+default_layout "compact"
+simplified_ui true
+pane_viewport_serialization true
+show_startup_tips false
+theme "dracula"
+
+keybinds {
+    unbind "Alt n"
+
+    pane {
+        unbind "d"
+        unbind "z"
+        unbind "c"
+
+        bind "Tab" { FocusNextPane; }
+        bind "r" { SwitchToMode "RenamePane"; PaneNameInput 0;}
+
+        bind "_" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "|" { NewPane "Right"; SwitchToMode "Normal"; }
+    }
+
+    shared_except "locked" {
+        unbind "Ctrl q"
+        unbind "Alt f"
+
+        bind "Ctrl f" { ToggleFloatingPanes; }
+    }
+
+    scroll {
+        unbind "Ctrl f"
+        unbind "Ctrl b"
+    }
+
+    search {
+        unbind "Ctrl f"
+        unbind "Ctrl b"
+    }
+}

@@ -3,11 +3,9 @@
 # Copy zsh conf:
 cp --parents ~/.zshrc .
 
-# Copy tmux conf:
-cp --parents ~/.tmux.conf .
-
-# Copy alacritty conf:
-cp --parents -r ~/.alacritty.toml .
+# Copy alacritty+zellij conf:
+cp --parents ~/.alacritty.toml .
+cp --parents -r ~/.config/zellij .
 
 # Copy zed conf:
 cp --parents -r ~/.config/zed .

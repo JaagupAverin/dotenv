@@ -3,11 +3,9 @@
 # Copy zsh conf:
 cp --parents home/jaagup/.zshrc /
 
-# Copy tmux conf:
-cp --parents home/jaagup/.tmux.conf /
-
-# Copy alacritty conf:
-cp --parents -r home/jaagup/.alacritty.toml /
+# Copy alacritty+zellij conf:
+cp --parents home/jaagup/.alacritty.toml /
+cp --parents -r home/jaagup/.config/zellij /
 
 # Copy zed conf:
 cp --parents -r home/jaagup/.config/zed /

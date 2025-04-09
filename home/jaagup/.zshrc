@@ -53,10 +53,12 @@ function tssh() {
   ssh $* -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
 }
 
-export EDITOR=nano
+export EDITOR=zed
+export VISUAL=zed
 export PATH="$PATH:/home/jaagup/.local/bin"
 source "$HOME/.rye/env"
 
 terminal="$(ps -p $(ps -p $$ -o ppid=) -o comm=)"
 
+export ZELLIJ_AUTO_ATTACH=true
 eval "$(zellij setup --generate-auto-start zsh)"

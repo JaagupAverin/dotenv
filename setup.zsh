@@ -19,12 +19,9 @@ fi
 # Apply user conf
 ./apply.zsh
 
-# Setup tmux
-if [ ! -d ~/.tmux/plugins/tpm ]; then
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-    tmux source ~/.tmux.conf
-    # And then enter (prefix + I) inside tmux to install plugins!
-fi
+# Setup alacritty and zellij
+sudo snap install alacritty --classic
+sudo snap install zellij --classic
 
 # Configure KDE manually
 # Install apps manually:
