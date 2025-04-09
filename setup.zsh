@@ -3,7 +3,7 @@
 sudo apt-get update
 
 # Install basic tools
-sudo apt-get install -y curl wireguard tmux fzf picocom ncdu net-tools ffmpeg xxd build-essential linux-headers-`uname -r` dkms swig flex bison tlp powerstat cmake
+sudo apt-get install -y curl wireguard tmux fzf picocom ncdu net-tools ffmpeg xxd build-essential linux-headers-`uname -r` dkms swig flex bison powerstat cmake device-tree-compiler openssl xdd wl-clipboard
 sudo apt-get install -y default-jre
 
 # Install apps
