@@ -13,7 +13,7 @@ compinit
 #precmd() { vcs_info }
 #zstyle ':vcs_info:git:*' formats '%b '
 #setopt PROMPT_SUBST
-PROMPT='%F{red}%~%f '
+PROMPT='%F{green}%~%f '
 
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
@@ -55,11 +55,8 @@ function tssh() {
 
 export EDITOR=nano
 export PATH="$PATH:/home/jaagup/.local/bin"
-export PATH="$PATH:/home/jaagup/odin-linux-amd64-dev-2024-10"
 source "$HOME/.rye/env"
 
 terminal="$(ps -p $(ps -p $$ -o ppid=) -o comm=)"
 
-if [ "$terminal" = "konsole" ]; then
-    tmux attach || tmux new -s tmux
-fi
+eval "$(zellij setup --generate-auto-start zsh)"

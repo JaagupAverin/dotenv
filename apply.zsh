@@ -6,8 +6,8 @@ cp --parents home/jaagup/.zshrc /
 # Copy tmux conf:
 cp --parents home/jaagup/.tmux.conf /
 
-# Copy konsole conf:
-cp --parents -r home/jaagup/.local/share/konsole /
+# Copy alacritty conf:
+cp --parents -r home/jaagup/.alacritty.toml /
 
 # Copy zed conf:
 cp --parents -r home/jaagup/.config/zed /
