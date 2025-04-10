@@ -5,7 +5,10 @@ show_startup_tips false
 theme "dracula"
 
 keybinds {
-    unbind "Alt n"
+    shared {
+        unbind "Alt n"
+        bind "Ctrl e" { EditScrollback; }
+    }
 
     pane {
         unbind "d"
@@ -22,6 +25,7 @@ keybinds {
     shared_except "locked" {
         unbind "Ctrl q"
         unbind "Alt f"
+        unbind "Ctrl d"
 
         bind "Ctrl f" { ToggleFloatingPanes; }
     }

@@ -58,7 +58,17 @@ export VISUAL=zed
 export PATH="$PATH:/home/jaagup/.local/bin"
 source "$HOME/.rye/env"
 
-terminal="$(ps -p $(ps -p $$ -o ppid=) -o comm=)"
+export TERMINAL=$(basename "/"$(ps -o cmd -f -p $(cat /proc/$(echo $$)/stat | cut -d \  -f 4) | tail -1 | sed 's/ .*$//'))
 
 export ZELLIJ_AUTO_ATTACH=true
-eval "$(zellij setup --generate-auto-start zsh)"
+
+if [[ "$TERMINAL" == "alacritty" ]]; then
+    ZJ_SESSIONS=$(zellij list-sessions)
+    NO_SESSIONS=$(echo "${ZJ_SESSIONS}" | wc -l)
+
+    if [ "${NO_SESSIONS}" -ge 2 ]; then
+        zellij attach "$(echo "${ZJ_SESSIONS}" | sk --ansi | awk '{print $1}')"
+    else
+    zellij attach -c
+    fi
+fi

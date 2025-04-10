@@ -24,3 +24,16 @@ green = "#34cb62"
 
 [cursor]
 unfocused_hollow = false
+
+[keyboard]
+bindings = [
+    { key = "A", mods = "Alt", chars = "\u001b[H" },
+    { key = "E", mods = "Alt", chars = "\u001b[F" },
+    { key = "B", mods = "Alt", chars = "\u001b[D" },
+    { key = "F", mods = "Alt", chars = "\u001b[C" },
+    { key = "B", mods = "Control|Alt", chars = "\u001bb" },
+    { key = "F", mods = "Control|Alt", chars = "\u001bf" },
+    { key = "Backspace", mods = "Control", chars = "\u0017" },
+    { key = "D", mods = "Alt", chars = "\u001b[3~" },
+    { key = "D", mods = "Control|Alt", chars = "\u001bd" },
+]
